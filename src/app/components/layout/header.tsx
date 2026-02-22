@@ -1,8 +1,9 @@
-import { Bell, Menu, Activity } from 'lucide-react';
+import { Bell, Menu } from 'lucide-react';
 import { Avatar, AvatarFallback } from '../ui/avatar';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
 import RoleSwitcher from './role-switcher';
+import { DentalAILogoBlue } from '../dental-ai-logo';
 
 interface HeaderProps {
   onMenuClick: () => void;
@@ -23,9 +24,7 @@ export default function Header({ onMenuClick }: HeaderProps) {
           </Button>
           
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <Activity className="h-5 w-5 text-white" />
-            </div>
+            <DentalAILogoBlue className="h-8 w-8" />
             <span className="font-semibold text-lg hidden sm:block">DentalAI</span>
           </div>
         </div>
